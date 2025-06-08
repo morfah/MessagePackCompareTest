@@ -1,9 +1,11 @@
 ## Native AOT problem
-I want to use Nerbank.MessagePack instead of the more common MessagePack library because I need to serialize List<T> and use NativeAOT.
+It seems that the more commonly used MessagePack library has a problem with List<T> and publishing with NativeAOT.
 
-But I noticed that the publish times where much longer, and the filesizes huge when I used Nerdbank.
+I found the Nerdbank alternative, which supposedly does not have this issue.
 
-At least the program works though. But I can't really use Nerdbank version for my project until it product acceptable filesizes.
+However, I noticed that publish times were significantly longer, and the file sizes were much larger when using Nerdbank.
+
+While the program works, I can't use the Nerdbank version for my project until it produces acceptable file sizes.
 
 ## Sizes
 | Project           | File                  | Size (MB) |
