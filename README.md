@@ -1,4 +1,4 @@
-## Native AOT problem
+## .net 8 NativeAOT problem
 It seems that the more commonly used MessagePack library has a problem with List<T> and publishing with NativeAOT.
 
 I found the Nerdbank alternative, which supposedly does not have this issue.
