@@ -2,9 +2,6 @@
 
 namespace MessagePackTests.Converters
 {
-    /// <summary>
-    /// Vector2 converter for MessagePack. Compatible with FNA & MonoGame.
-    /// </summary>
     public class Vector2Converter : MessagePackConverter<Vector2>
     {
         public override void Write(ref MessagePackWriter writer, in Vector2 value, SerializationContext context)

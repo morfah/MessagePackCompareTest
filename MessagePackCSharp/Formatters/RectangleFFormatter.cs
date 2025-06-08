@@ -3,9 +3,6 @@ using MessagePack.Formatters;
 
 namespace MessagePackCSTests.Formatters
 {
-    /// <summary>
-    /// RectangleF formatter for MessagePack.
-    /// </summary>
     public class RectangleFFormatter : IMessagePackFormatter<RectangleF>
     {
         public void Serialize(ref MessagePackWriter writer, RectangleF value, MessagePackSerializerOptions options)

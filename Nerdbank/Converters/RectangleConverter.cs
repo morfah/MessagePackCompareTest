@@ -2,9 +2,6 @@
 
 namespace MessagePackTests.Converters
 {
-    /// <summary>
-    /// Rectangle converter for MessagePack. Compatible with FNA & MonoGame.
-    /// </summary>
     public class RectangleConverter : MessagePackConverter<Rectangle>
     {
         public override void Write(ref MessagePackWriter writer, in Rectangle value, SerializationContext context)

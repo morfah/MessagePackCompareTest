@@ -3,9 +3,6 @@ using MessagePack.Formatters;
 
 namespace MessagePackCSTests.Formatters
 {
-    /// <summary>
-    /// Point formatter for MessagePack. Compatible with FNA & MonoGame.
-    /// </summary>
     public class PointFormatter : IMessagePackFormatter<Point>
     {
         public void Serialize(ref MessagePackWriter writer, Point value, MessagePackSerializerOptions options)

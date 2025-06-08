@@ -3,9 +3,6 @@ using MessagePack.Formatters;
 
 namespace MessagePackCSTests.Formatters
 {
-    /// <summary>
-    /// Rectangle formatter for MessagePack. Compatible with FNA & MonoGame.
-    /// </summary>
     public class RectangleFormatter : IMessagePackFormatter<Rectangle>
     {
         public void Serialize(ref MessagePackWriter writer, Rectangle value, MessagePackSerializerOptions options)

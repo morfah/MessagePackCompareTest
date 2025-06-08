@@ -3,9 +3,6 @@ using MessagePack.Formatters;
 
 namespace MessagePackCSTests.Formatters
 {
-    /// <summary>
-    /// Color formatter for MessagePack. Compatible with FNA.
-    /// </summary>
     public class ColorFormatter : IMessagePackFormatter<Color>
     {
         public void Serialize(ref MessagePackWriter writer, Color value, MessagePackSerializerOptions options)
@@ -15,8 +12,7 @@ namespace MessagePackCSTests.Formatters
 
         public Color Deserialize(ref MessagePackReader reader, MessagePackSerializerOptions options)
         {
-            Color value = Color.FromArgb(reader.ReadInt32());
-            return value;
+            return Color.FromArgb(reader.ReadInt32());
         }
     }
 }

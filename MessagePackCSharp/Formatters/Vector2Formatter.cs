@@ -3,9 +3,6 @@ using MessagePack.Formatters;
 
 namespace MessagePackCSTests.Formatters
 {
-    /// <summary>
-    /// Vector2 formatter for MessagePack. Compatible with FNA & MonoGame.
-    /// </summary>
     public class Vector2Formatter : IMessagePackFormatter<Vector2>
     {
         public void Serialize(ref MessagePackWriter writer, Vector2 value, MessagePackSerializerOptions options)

@@ -11,7 +11,7 @@ namespace MessagePackTests.Converters
             Serializer = new();
             Serializer = Serializer with
             {
-              Converters = [
+                Converters = [
                 new ColorConverter(),
                 new PointConverter(),
                 new RectangleConverter(),

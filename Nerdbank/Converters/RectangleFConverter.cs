@@ -2,9 +2,6 @@
 
 namespace MessagePackTests.Converters
 {
-    /// <summary>
-    /// RectangleF convter for MessagePack.
-    /// </summary>
     public class RectangleFConverter : MessagePackConverter<RectangleF>
     {
         public override void Write(ref MessagePackWriter writer, in RectangleF value, SerializationContext context)
