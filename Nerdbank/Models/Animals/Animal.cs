@@ -10,10 +10,8 @@ namespace MessagePackTests.Models.Animals
     [DerivedTypeShape(typeof(KomodoDragon), Tag = 4)]
     [DerivedTypeShape(typeof(Manatee), Tag = 5)]
     [DerivedTypeShape(typeof(RedPanda), Tag = 6)]
-    public abstract partial class Animal
+    public abstract class Animal
     {
-        private readonly string _name;
-
         protected Animal(Guid id, Vector2 position, float depth, AnimalTypes type)
         {
             Id = id;
@@ -22,8 +20,6 @@ namespace MessagePackTests.Models.Animals
 
             Position = position;
             Type = type;
-
-            _name = type.ToString();
         }
 
         [Key(0)]
@@ -42,11 +38,6 @@ namespace MessagePackTests.Models.Animals
         {
             Depth = depth;
             return this;
-        }
-
-        public override string ToString()
-        {
-            return _name;
         }
     }
 }
