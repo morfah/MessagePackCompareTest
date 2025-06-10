@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Nerdbank.MessagePack" Version="0.6.27-beta" />
+    <PackageReference Include="Nerdbank.MessagePack" Version="0.7.1-beta" />
   </ItemGroup>
 
   <ItemGroup>

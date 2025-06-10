@@ -8,10 +8,13 @@ namespace MessagePackTests.Converters
 
         private EngineSerializer()
         {
-            Serializer = new();
+            Serializer = new MessagePackSerializer()
+                .WithGuidConverter(OptionalConverters.GuidFormat.BinaryLittleEndian);
+
             Serializer = Serializer with
             {
                 Converters = [
+                ..Serializer.Converters,
                 new ColorConverter(),
                 new PointConverter(),
                 new RectangleConverter(),

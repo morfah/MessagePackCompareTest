@@ -7,6 +7,9 @@ However, I noticed that publish times were significantly longer and the file siz
 
 While the program works fine, I’m hesitant to switch to Nerdbank for now due to these concerns.
 
+## Issue to track
+https://github.com/AArnott/Nerdbank.MessagePack/issues/445
+
 ## Test
 Run powershell script `publish_and_compare.ps1` to compare the results.
 
@@ -17,6 +20,8 @@ Run powershell script `publish_and_compare.ps1` to compare the results.
 | MessagePackCSharp | 3.1.3       | MessagePackCSharp.pdb | 27.46     |
 | Nerdbank          | 0.6.27-beta | Nerdbank.exe          | 30.22     |
 | Nerdbank          | 0.6.27-beta | Nerdbank.pdb          | 370.65    |
+| Nerdbank          | 0.7.1-beta  | Nerdbank.exe          | 7.12      |
+| Nerdbank          | 0.7.1-beta  | Nerdbank.pdb          | 42.64     |
 
 ## Publish times
 ### My specs
@@ -30,9 +35,11 @@ Run powershell script `publish_and_compare.ps1` to compare the results.
 |-------------------|-------------|----------|
 | MessagePackCSharp | 3.1.3       | 8.7      |
 | Nerdbank          | 0.6.27-beta | 32.0     |
+| Nerdbank          | 0.7.1-beta  | 10.4     |
 
 ## Does the program work after publishing to NativeAOT
 | Project           | Version     | Works?   |
 |-------------------|-------------|----------|
-| MessagePackCSharp | 3.1.3       | [ ]      |
-| Nerdbank          | 0.6.27-beta | [X]      |
+| MessagePackCSharp | 3.1.3       | ❌      |
+| Nerdbank          | 0.6.27-beta | ✅      |
+| Nerdbank          | 0.7.1-beta  | ✅      |
