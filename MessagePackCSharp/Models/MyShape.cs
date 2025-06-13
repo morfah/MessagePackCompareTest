@@ -8,7 +8,7 @@ namespace MessagePackTests.Models
     {
         public MyShape(
             Guid id,
-            string name,
+            string? name,
             Version version,
             List<Animal> animals)
         {
@@ -23,7 +23,7 @@ namespace MessagePackTests.Models
         public Guid Id { get; }
 
         [Key(1)]
-        public string Name { get; private set; }
+        public string? Name { get; private set; }
 
         [Key(2)]
         public Version Version { get; private set; }
@@ -31,7 +31,7 @@ namespace MessagePackTests.Models
         [Key(7)]
         public List<Animal> Animals { get; }
 
-        public MyShape SetName(string name)
+        public MyShape SetName(string? name)
         {
             Name = name;
             return this;
