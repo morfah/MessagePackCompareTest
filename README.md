@@ -22,45 +22,27 @@ https://github.com/AArnott/Nerdbank.MessagePack/issues/445
 Run powershell script `publish_and_compare.ps1` to compare the results.
 
 ## Sizes
-| Project           | Version     |  File                 | Size (MB) |
-|-------------------|-------------|-----------------------|-----------|
-| MessagePackCSharp | 3.1.3       | MessagePackCSharp.exe | 5.17      |
-| MessagePackCSharp | 3.1.3       | MessagePackCSharp.pdb | 27.46     |
-| MessagePackCSharp | 3.1.4       | MessagePackCSharp.exe | 5.18      |
-| MessagePackCSharp | 3.1.4       | MessagePackCSharp.pdb | 27.47     |
-| Nerdbank          | 0.6.27-beta | Nerdbank.exe          | 30.22     |
-| Nerdbank          | 0.6.27-beta | Nerdbank.pdb          | 370.65    |
-| Nerdbank          | 0.7.1-beta  | Nerdbank.exe          | 7.12      |
-| Nerdbank          | 0.7.1-beta  | Nerdbank.pdb          | 42.64     |
-| Nerdbank          | 0.8.1-rc    | Nerdbank.exe          | 7.12      |
-| Nerdbank          | 0.8.1-rc    | Nerdbank.pdb          | 42.65     |
-| Nerdbank          | 0.8.30-rc   | Nerdbank.exe          | 7.16      |
-| Nerdbank          | 0.8.30-rc   | Nerdbank.pdb          | 42.66     |
+| Project           | Version     |  File                 | Size EXE (MB) | Size PDB (MB) | .NET target |
+|-------------------|-------------|-----------------------|---------------|---------------|-------------|
+| MessagePackCSharp | 3.1.3       | MessagePackCSharp     | 5.17          | 27.46         | .net 8.0    |
+| MessagePackCSharp | 3.1.4       | MessagePackCSharp     | 5.18          | 27.47         | .net 8.0    |
+| Nerdbank          | 0.6.27-beta | Nerdbank              | 30.22         | 370.65        | .net 8.0    |
+| Nerdbank          | 0.7.1-beta  | Nerdbank              | 7.12          | 42.64         | .net 8.0    |
+| Nerdbank          | 0.8.1-rc    | Nerdbank              | 7.12          | 42.65         | .net 8.0    |
+| Nerdbank          | 0.8.30-rc   | Nerdbank              | 7.16          | 42.66         | .net 8.0    |
+| Nerdbank          | 0.9.12-rc   | Nerdbank              | 7.3           | 44.71         | .net 8.0    |
+| Nerdbank          | 0.10.2-rc   | Nerdbank              | 7.29          | 44.71         | .net 8.0    |
+| Nerdbank          | 0.10.42-rc  | Nerdbank              | 7.29          | 44.15         | .net 8.0    |
 
 ## Does the program work after publishing to NativeAOT
 | Project           | Version     | Works?   |
 |-------------------|-------------|----------|
 | MessagePackCSharp | 3.1.3       | ❌       |
 | MessagePackCSharp | 3.1.4       | ❌       |
-| Nerdbank          | 0.6.27-beta | ✅      |
-| Nerdbank          | 0.7.1-beta  | ✅      |
-| Nerdbank          | 0.8.1-rc    | ✅      |
-| Nerdbank          | 0.8.30-rc   | ✅      |
-
-## Publish times
-Takes these numbers with a grain of salt, they vary every day.
-### My specs
-| Component | Specification                         |
-|-----------|---------------------------------------|
-| CPU       | AMD Ryzen 9 5950X 16-Core Processor   |
-| MEM       | 64.0 GB                               |
-
-### Result
-| Project           | Version     | Time (s) |
-|-------------------|-------------|----------|
-| MessagePackCSharp | 3.1.3       | 8.7      |
-| MessagePackCSharp | 3.1.4       | 11.5     |
-| Nerdbank          | 0.6.27-beta | 32.0     |
-| Nerdbank          | 0.7.1-beta  | 10.4     |
-| Nerdbank          | 0.8.1-rc    | 10.6     |
-| Nerdbank          | 0.8.30-rc   | 11.9     |
+| Nerdbank          | 0.6.27-beta | ✅       |
+| Nerdbank          | 0.7.1-beta  | ✅       |
+| Nerdbank          | 0.8.1-rc    | ✅       |
+| Nerdbank          | 0.8.30-rc   | ✅       |
+| Nerdbank          | 0.9.12-rc   | ✅       |
+| Nerdbank          | 0.10.2-rc   | ✅       |
+| Nerdbank          | 0.10.42-rc  | ✅       |
