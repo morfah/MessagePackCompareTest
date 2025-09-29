@@ -1,9 +1,9 @@
 ﻿using MessagePack;
-using MessagePackCSTests.Formatters;
-using MessagePackTests.Models;
-using MessagePackTests.Models.Animals;
+using MessagePackCSharp.Formatters;
+using MessagePackCSharp.Models;
+using MessagePackCSharp.Models.Animals;
 
-namespace MessagePackCSTests
+namespace MessagePackCSharp
 {
     internal class Program
     {

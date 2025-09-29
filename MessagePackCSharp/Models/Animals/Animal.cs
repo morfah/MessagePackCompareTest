@@ -1,6 +1,6 @@
 ﻿using MessagePack;
 
-namespace MessagePackTests.Models.Animals
+namespace MessagePackCSharp.Models.Animals
 {
     [Union(0, typeof(Capybara))]
     [Union(1, typeof(SnowLeopard))]

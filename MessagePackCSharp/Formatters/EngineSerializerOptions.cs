@@ -2,11 +2,11 @@
 using MessagePack.Formatters;
 using MessagePack.Resolvers;
 
-namespace MessagePackCSTests.Formatters
+namespace MessagePackCSharp.Formatters
 {
     public sealed class EngineSerializerOptions
     {
-        private static readonly EngineSerializerOptions _instance = new EngineSerializerOptions();
+        private static readonly EngineSerializerOptions _instance = new();
 
         private EngineSerializerOptions()
         {
@@ -19,20 +19,20 @@ namespace MessagePackCSTests.Formatters
 
         private static MessagePackSerializerOptions CreateOptions()
         {
-            IMessagePackFormatter[] formatters = new IMessagePackFormatter[]
-            {
+            IMessagePackFormatter[] formatters =
+            [
                 new ColorFormatter(),
                 new Vector2Formatter(),
                 new PointFormatter(),
                 new RectangleFFormatter(),
                 new RectangleFormatter(),
-            };
+            ];
 
-            IFormatterResolver resolver = CompositeResolver.Create(formatters, new IFormatterResolver[]
-            {
+            IFormatterResolver resolver = CompositeResolver.Create(formatters,
+            [
                 NativeGuidResolver.Instance,
                 StandardResolver.Instance // Fallback resolver
-            });
+            ]);
 
             MessagePackSerializerOptions options = MessagePackSerializerOptions.Standard
                 .WithResolver(resolver)

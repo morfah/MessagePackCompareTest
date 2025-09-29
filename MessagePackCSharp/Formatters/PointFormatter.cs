@@ -1,7 +1,7 @@
 ﻿using MessagePack;
 using MessagePack.Formatters;
 
-namespace MessagePackCSTests.Formatters
+namespace MessagePackCSharp.Formatters
 {
     public class PointFormatter : IMessagePackFormatter<Point>
     {

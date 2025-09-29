@@ -1,6 +1,6 @@
 ﻿using MessagePack;
 
-namespace MessagePackTests.Models.Animals
+namespace MessagePackCSharp.Models.Animals
 {
     [MessagePackObject]
     public class BlueJay : Animal

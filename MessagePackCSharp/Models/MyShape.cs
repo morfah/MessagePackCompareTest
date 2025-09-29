@@ -1,7 +1,7 @@
 using MessagePack;
-using MessagePackTests.Models.Animals;
+using MessagePackCSharp.Models.Animals;
 
-namespace MessagePackTests.Models
+namespace MessagePackCSharp.Models
 {
     [MessagePackObject]
     public partial class MyShape

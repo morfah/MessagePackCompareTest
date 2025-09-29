@@ -1,4 +1,4 @@
-﻿namespace MessagePackTests.Models.Animals
+﻿namespace MessagePackCSharp.Models.Animals
 {
     public enum AnimalTypes
     {
