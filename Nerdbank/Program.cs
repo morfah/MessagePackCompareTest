@@ -1,8 +1,8 @@
-﻿using MessagePackTests.Converters;
-using MessagePackTests.Models;
-using MessagePackTests.Models.Animals;
+﻿using Nerdbank.Converters;
+using Nerdbank.Models;
+using Nerdbank.Models.Animals;
 
-namespace MessagePackTests
+namespace Nerdbank
 {
     internal class Program
     {

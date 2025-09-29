@@ -1,8 +1,8 @@
-using MessagePackTests.Models.Animals;
 using Nerdbank.MessagePack;
+using Nerdbank.Models.Animals;
 using PolyType;
 
-namespace MessagePackTests.Models
+namespace Nerdbank.Models
 {
     [GenerateShape]
     public partial class MyShape

@@ -1,6 +1,6 @@
 ﻿using Nerdbank.MessagePack;
 
-namespace MessagePackTests.Converters
+namespace Nerdbank.Converters
 {
     public class PointConverter : MessagePackConverter<Point>
     {

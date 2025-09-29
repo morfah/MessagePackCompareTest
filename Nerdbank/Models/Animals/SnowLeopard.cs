@@ -1,6 +1,6 @@
 ﻿using Nerdbank.MessagePack;
 
-namespace MessagePackTests.Models.Animals
+namespace Nerdbank.Models.Animals
 {
     public class SnowLeopard : Animal
     {

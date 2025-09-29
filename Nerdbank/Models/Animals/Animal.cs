@@ -1,7 +1,7 @@
 ﻿using Nerdbank.MessagePack;
 using PolyType;
 
-namespace MessagePackTests.Models.Animals
+namespace Nerdbank.Models.Animals
 {
     [DerivedTypeShape(typeof(Capybara), Tag = 0)]
     [DerivedTypeShape(typeof(SnowLeopard), Tag = 1)]

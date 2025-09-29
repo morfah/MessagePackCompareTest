@@ -1,4 +1,4 @@
-﻿namespace MessagePackTests.Models.Animals
+﻿namespace Nerdbank.Models.Animals
 {
     public class RedPanda : Animal
     {
