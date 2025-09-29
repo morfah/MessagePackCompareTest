@@ -29,7 +29,7 @@ Write-Host "============================"
 foreach ($project in $projects) {
     Write-Host "=== $project Output ==="
     
-    $outputPath = Join-Path -Path $project -ChildPath "bin\Release\net8.0\win-x64\publish"
+    $outputPath = Join-Path -Path $project -ChildPath "bin\Release\net10.0\win-x64\publish"
     $exeFile = Join-Path $outputPath "$project.exe"
     $pdbFile = Join-Path $outputPath "$project.pdb"
 
